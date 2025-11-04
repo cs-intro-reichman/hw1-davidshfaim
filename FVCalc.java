@@ -9,7 +9,7 @@ public class FVCalc {
 		double y = Double.parseDouble(years);
 		double r = Double.parseDouble(rate);
 		double fv = cv * Math.pow((1 + r/100), y);
-		System.out.println("After " + years + " years, " + "$" + (int) cv +  " saved at " +  r + "% " + " will yield " + "$" + (int) fv );	
+		System.out.println("After " + years + " years, " + "$" + (int) cv +  " saved at " +  r + "% " + "will yield " + "$" + (int) fv );	
 	
 	}
 }
