@@ -7,7 +7,7 @@ public class Bill3 {
 		String name3 = args[2];
 		double amount1 = Double.parseDouble(args[3]);
 		double split = Math.ceil(amount1 / 3);
-		System.out.println ("dear" + " " + name3 + ", " + name2 + " and " + name1 + " :" + " pay " + split + " shekels" + " ecah.");
+		System.out.println ("dear" + " " + name3 + ", " + name2 + ", " + " and " + name1 + ":" + " pay " + split + " Shekels" + " each");
 		                    
 
 	    // Replace this comment with the rest of your code   
