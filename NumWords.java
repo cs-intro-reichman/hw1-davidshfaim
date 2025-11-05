@@ -5,7 +5,8 @@ public class NumWords {
 		String number = args[0];
 		double num = Double.parseDouble(number);
 		double hundreds = Math.floor(num / 100);
-		double tens = Math.floor((num / hundreds) / 100 ) ;
+		double tens = Math.floor((num - hundreds * 100) / 10 ) ;
+		
 		double units = num % 10 ;
 		System.out.println((int)hundreds + " hundreds" + ", " + (int)tens + " tens," + " and " + (int)units + " ones.");
 
