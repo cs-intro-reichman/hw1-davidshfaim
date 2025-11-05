@@ -4,17 +4,10 @@ public class NumWords {
 	    // Replace this comment with your code
 		String number = args[0];
 		double num = Double.parseDouble(number);
-		double ran1 = Math.random() ;
-		double ran2 = Math.random() ;
-		double ran3 = Math.random() ;
-		double a = ran1 * num + 1; 
-		double b = ran2 * num + 1;
-		double c = ran3 * num + 1;
-		System.err.println((int)a + " " +(int)b + " " + (int)c);
-        double max = Math.max(a , Math.max(b, c));
-		double min = Math.min(a , Math.min(b, c));
-		double even = (a + b + c) - (max + min);
-		System.out.println((int)min + " " +(int)even + " " + (int)max);
+		double hundreds = Math.floor(num / 100);
+		double tens = Math.floor((num / hundreds) / 100 ) ;
+		double units = num % 10 ;
+		System.out.println((int)hundreds + " hundreds" + ", " + (int)tens + " tens," + " and " + (int)units + " ones.");
 
 
 
